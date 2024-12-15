@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTW Construction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Permit to Work (PTW) System</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#apply">Apply for Permit</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We manage construction work with strict safety standards.</p>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Risk Assessment</li>
+            <li>Training</li>
+            <li>Permit Issuance</li>
+        </ul>
+    </section>
+    <section id="apply">
+        <h2>Apply for a Permit</h2>
+        <form id="permit-form">
+            <label for="project-name">Project Name:</label>
+            <input type="text" id="project-name" required>
+  
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+  
+            <label for="work-type">Type of Work:</label>
+            <input type="text" id="work-type" required>
+  
+            <label for="datetime">Date & Time:</label>
+            <input type="datetime-local" id="datetime" required>
+  
+            <label for="requestor-name">Your Name:</label>
+            <input type="text" id="requestor-name" required>
+  
+            <button type="submit">Submit Application</button>
+        </form>
+        <div id="confirmation" style="display:none;"></div>
+    </section>
+    <footer>
+        <p>&copy; 2023 PTW Construction. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
